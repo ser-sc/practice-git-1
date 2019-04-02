@@ -105,3 +105,8 @@ packer validate -var-file variables.json ubuntu16.json
 Ошибка некорректного заполнения значений будет найдена только при создании образа.
 
 Синтаксис использования значений переменных в конфигурации `{{user ``var_name``}}`. Ссылка на массив не отличается синтаксически от ссылки на строку.
+
+*Полезные ссылки*
+
+- [Systemd за пять минут](https://habr.com/ru/company/southbridge/blog/255845/)
+- [systemd: The Good Parts](https://www.hashicorp.com/resources/systemd-the-good-parts)
