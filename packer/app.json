@@ -12,7 +12,7 @@
 		{
 			"type" : "googlecompute",
 			"project_id" : "infra-{{user `project_id`}}",
-			"image_name" : "reddit-base-{{timestamp}}",
+			"image_name" : "reddit-app-base",
 			"image_family" : "reddit-base",
 			"image_description" : "{{user `image_description`}}",
 			"source_image_family" : "{{user `source_image_family`}}",
@@ -21,19 +21,13 @@
 			"machine_type" : "{{user `machine_type`}}",
 			"disk_size" : "{{user `disk_size`}}",
 			"disk_type" : "{{user `disk_type`}}",
-			"network" : "default",
-			"tags" : "{{user `tags`}}"
+			"network" : "default"
 		}
 	],
 	"provisioners": [
 		{
 			"type" : "shell",
 			"script" : "scripts/install_ruby.sh",
-			"execute_command" : "sudo {{.Path}}"
-		},
-		{
-			"type" : "shell",
-			"script" : "scripts/install_mongodb.sh",
 			"execute_command" : "sudo {{.Path}}"
 		}
 	]
