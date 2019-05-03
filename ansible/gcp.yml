@@ -2,7 +2,7 @@
 - name: Instance facts
   hosts: db
   tasks:
-    - name:  Instance facts
+    - name: Instance facts
       gcp_compute_instance_facts:
         project: infra-235119
         zone: europe-west1-b
