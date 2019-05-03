@@ -10,15 +10,6 @@
       copy: src=files/puma.service dest=/etc/systemd/system/puma.service
       notify: reload puma
 
-    - name: Instance facts
-      gcp_compute_instance_facts:
-        project: infra-235119
-        zone: europe-west1-b
-        filters: name=reddit-db
-        auth_kind: serviceaccount
-        service_account_file: /Users/akozhin/infra-235119-3cab3055011e.json
-      register: instance
-
     - name: Add config for DB connection
       template:
         src: templates/db_config.j2
