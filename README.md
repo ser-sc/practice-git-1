@@ -1,5 +1,5 @@
-# akozhin_infra
-akozhin Infra repository
+# ser_infra
+ser Infra repository
 
 # Homework 5 GCP & VPN
 
