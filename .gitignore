@@ -1,10 +1,6 @@
-*.retry
-jdauphant.nginx
-# Vagrant & molecule
-.vagrant/
 *.log
-*.pyc
-.molecule
-.cache
-.pytest_cache
-env
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
