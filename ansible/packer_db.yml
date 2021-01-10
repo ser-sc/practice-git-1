@@ -1,0 +1,9 @@
+- name: Install MongoDB 3.2
+  hosts: all
+  become: true
+  tasks:
+  # Добавим ключ репозитория для последующей работы с ним
+  - name: Add APT key
+    apt_key:
+      id: EA312927
+      keyserver: keyserver.ubuntu.com
