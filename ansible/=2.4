@@ -1,0 +1,24 @@
+Requirement already satisfied: ansible in /usr/local/lib/python3.8/dist-packages (2.10.0)
+Requirement already satisfied: ansible-base<2.11,>=2.10.1 in /usr/local/lib/python3.8/dist-packages (from ansible) (2.10.2)
+Collecting cryptography
+  Downloading cryptography-3.3.1-cp36-abi3-manylinux2010_x86_64.whl (2.6 MB)
+Collecting PyYAML
+  Using cached PyYAML-5.3.1.tar.gz (269 kB)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from ansible-base<2.11,>=2.10.1->ansible) (20.4)
+Collecting jinja2
+  Using cached Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+Requirement already satisfied: cffi>=1.12 in /usr/local/lib/python3.8/dist-packages (from cryptography->ansible-base<2.11,>=2.10.1->ansible) (1.14.3)
+Collecting six>=1.4.1
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: pyparsing>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging->ansible-base<2.11,>=2.10.1->ansible) (2.4.7)
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp38-cp38-manylinux1_x86_64.whl (32 kB)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi>=1.12->cryptography->ansible-base<2.11,>=2.10.1->ansible) (2.20)
+Building wheels for collected packages: PyYAML
+  Building wheel for PyYAML (setup.py): started
+  Building wheel for PyYAML (setup.py): finished with status 'done'
+  Created wheel for PyYAML: filename=PyYAML-5.3.1-cp38-cp38-linux_x86_64.whl size=44617 sha256=d560f634a8c6e94789cdac223884a6b8a0d24b71218d94faea1d5a18ee9464de
+  Stored in directory: /root/.cache/pip/wheels/13/90/db/290ab3a34f2ef0b5a0f89235dc2d40fea83e77de84ed2dc05c
+Successfully built PyYAML
+Installing collected packages: six, cryptography, PyYAML, MarkupSafe, jinja2
+Successfully installed MarkupSafe-1.1.1 PyYAML-5.3.1 cryptography-3.3.1 jinja2-2.11.2 six-1.15.0

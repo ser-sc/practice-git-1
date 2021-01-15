@@ -1,0 +1,10 @@
+- name: Configure app-host & deploy application
+  hosts: app
+  become: true
+
+  vars:
+   db_host: 10.132.0.49
+
+  roles:
+    - app
+    - jdauphant.nginx

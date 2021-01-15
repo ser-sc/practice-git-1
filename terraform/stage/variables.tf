@@ -10,6 +10,7 @@ variable "resource" {
 
 variable "project" {
   description = "Project ID"
+  default = "infra-300806"
 }
 variable "region" {
   description = "Region"
@@ -20,9 +21,9 @@ variable "region" {
 # Описание переменной
 #description = "Path to the public key used for ssh access"
 #}
-variable "disk_image" {
-  description = "Disk image"
-}
+#variable "disk_image" {
+#  description = "Disk image"
+#}
 
 variable "app_disk_image" {
   description = "Disk image for reddit app"
